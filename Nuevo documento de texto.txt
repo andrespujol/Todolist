@@ -1,0 +1,24 @@
+
+un modal es un div con color solido, z-index alto y display block
+o sea ... no es nada
+el de bootstrap esta documentado igual
+solo tiene que tener un id
+
+myModal.toggle()
+ese lo prende y lo apaga desde un boton
+con un boton sin js
+<button type="button" data-bs-toggle="modal" data-bs-target="#myModal">Launch modal</button>
+con js
+var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+luego a cualquier boton le pones un listener clicl
+click
+y dentro de la funcion le mandas
+myModal.toggle()
+siempre que el id de tu modal sea myModal
+
+Chicos lo de los iconos es re fácil le agregan un nombre al value de cada opción
+Luego a ese nombre lo concatenan con .jpg
+Y esa ruta se la dan al dev del img con JavaScript
+Todo trucos re truchas
+
+El icono se pone solo cuando esta la lista de cosas por comprar
